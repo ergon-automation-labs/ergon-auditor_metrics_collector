@@ -4,12 +4,14 @@ defmodule BotArmyAuditorMetricsCollector.MixProject do
   def project do
     [
       app: :bot_army_auditor_metrics_collector,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       releases: [
-        metrics_collector_bot: [
+        auditor_metrics_collector_bot: [
+          applications: [bot_army_auditor_metrics_collector: :permanent]
+        ]
           applications: [bot_army_auditor_metrics_collector: :permanent]
         ]
       ]
