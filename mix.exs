@@ -12,8 +12,6 @@ defmodule BotArmyAuditorMetricsCollector.MixProject do
         auditor_metrics_collector_bot: [
           applications: [bot_army_auditor_metrics_collector: :permanent]
         ]
-          applications: [bot_army_auditor_metrics_collector: :permanent]
-        ]
       ]
     ]
   end
